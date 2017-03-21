@@ -1,0 +1,86 @@
+@mixin pv($p,$v) {
+  #{$p}:$v;
+}
+
+@mixin wrapper($width:$wrap) { 
+  max-width:$width; 
+  margin: 0 auto;
+}
+
+
+$image-url-path: "../images/" !default;
+@function image-url($url) {
+  @return url("#{$image-url-path}#{$url}");
+}
+
+@mixin hlist() {
+  list-style:none;
+  margin:0;
+  padding:0;
+  li {
+    margin:0;
+    padding:0;
+    display:inline-block;
+    *display:inline; 
+  }
+}
+
+@mixin hlist-justify() {
+  ul {
+    text-align:justify;
+    li {
+      &.blank {
+        content: " ";
+        width:100%;
+      }
+    }
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+@mixin appearance-none {
+  background:transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border:none;
+  box-shadow:none;
+}
+ 
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+.clearfix {
+  @include clearfix();
+}
