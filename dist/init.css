@@ -1,0 +1,350 @@
+/* MASTER */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+/*
+
+Columns 
+
+*/
+/*
+
+Offsets and other helpers 
+
+*/
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+#map_canvas img {
+  max-width: none; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle; }
+
+button,
+input {
+  *overflow: visible;
+  line-height: normal; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input[type="search"] {
+  box-sizing: content-box;
+  -webkit-appearance: textfield; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: ""; }
+
+.clearfix:after {
+  clear: both; }
+
+:focus {
+  outline: none;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #334d5a; }
+
+html body {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+input,
+select
+textarea,
+button,
+a.button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  word-wrap: break-word;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  border-radius: 0;
+  background-clip: padding-box; }
+  input i, input em,
+  select
+textarea i,
+  select
+textarea em,
+  button i,
+  button em,
+  a.button i,
+  a.button em {
+    text-transform: none;
+    font-style: italic; }
+
+legend {
+  width: 100%; }
+
+*::-webkit-input-placeholder {
+  color: #b3b3b3; }
+
+*:-moz-placeholder {
+  /* FF 4-18 */
+  color: #b3b3b3; }
+
+*::-moz-placeholder {
+  /* FF 19+ */
+  color: #b3b3b3; }
+
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #6d6d6d; }
+
+.button,
+input[type=submit],
+button {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 30px;
+  background: #6fbe44; }
+  .button i, .button em,
+  input[type=submit] i,
+  input[type=submit] em,
+  button i,
+  button em {
+    text-transform: none;
+    font-style: italic; }
+  .button a,
+  input[type=submit] a,
+  button a {
+    color: #fff; }
+    .button a.active, .button a:hover,
+    input[type=submit] a.active,
+    input[type=submit] a:hover,
+    button a.active,
+    button a:hover {
+      color: #141414; }
+    .button a:active,
+    input[type=submit] a:active,
+    button a:active {
+      color: #141414; }
+  .button:hover,
+  input[type=submit]:hover,
+  button:hover {
+    background: #334d5a; }
+  .button:active,
+  input[type=submit]:active,
+  button:active {
+    background: #141414; }
+
+section.container-wrap {
+  min-height: 600px; }
+  section.container-wrap:before, section.container-wrap:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+section.container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+  section.container:before, section.container:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.lightbox-wrap .lightbox-box .close {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  word-wrap: break-word;
+  font-size: 12px;
+  line-height: 20px;
+  color: #333333;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600; }
+  .lightbox-wrap .lightbox-box .close i, .lightbox-wrap .lightbox-box .close em {
+    text-transform: none;
+    font-style: italic; }
+  .lightbox-wrap .lightbox-box .close a {
+    color: #333333; }
+    .lightbox-wrap .lightbox-box .close a.active, .lightbox-wrap .lightbox-box .close a:hover {
+      color: #141414; }
+    .lightbox-wrap .lightbox-box .close a:active {
+      color: #141414; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  position: relative;
+  background: #fff;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600; }
+
+a:hover, a:active {
+  text-decoration: none; }
